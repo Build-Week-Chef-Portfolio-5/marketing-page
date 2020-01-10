@@ -1,0 +1,415 @@
+
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+.hug();
+font-size:65.2%;
+overflow-x:hidden;
+}
+
+
+body{
+line-height:1;
+font-size:1.5rem;
+-webkit-text-fill-color: azure;
+color: azure;
+font-weight:bolder;
+background-color:#fff;
+}
+
+.page{//div parent to all tags
+.hug();
+.flexSpreadCol();
+justify-content:center;
+align-items:center;
+@media screen and (max-width:@phoneUp){
+justify-content:center;
+align-items:center;
+grid-gap:0;
+}
+}
+
+.btn{
+font-weight:bolder;
+border:solid @shady;
+box-shadow: 0 0 3px #000;
+font-size:1.5rem;
+}
+
+.register{//register links
+-webkit-text-fill-color:azure;
+color:azure;
+-webkit-text-stroke:1px #000;
+text-shadow:0 0 5px @cool1;
+cursor: pointer;
+}
+.register em{
+text-shadow:0 0 5px #000;
+-webkit-text-stroke:.5px @cool1;
+color:azure;
+-webkit-text-fill-color: #000;
+
+}
+.login{//login links
+background: -webkit-linear-gradient(to bottom right, @cool1,cadetblue,@cool1,cadetblue,@cool1);
+background:linear-gradient(to bottom right, @cool1,cadetblue,@cool1,cadetblue,@cool1);
+-webkit-background-clip: text;
+background-clip: text;
+-webkit-text-fill-color: transparent;
+-webkit-text-stroke:.5px #fff;
+-webkit-transition:color 1s linear ;
+transition:color 1s linear ;
+font-weight:bolder;
+
+}
+
+
+.titlez{//section titles on about page
+-webkit-text-fill-color:#000;
+color:#000;
+-webkit-text-stroke:.5px #fff;
+-webkit-text-shadow:0 0 3px rgb(1, 5, 1);
+text-shadow:0 0 3px rgb(1, 5, 1);
+-webkit-animation:abt .5s linear infinite;
+animation:abt .5s linear infinite;
+font-size:2.5rem;
+font-family: fantasy;
+font-weight:bolder;
+}
+
+.titlez_{//section semi titles on about page
+width:100%;
+.flexCenterCol();
+-webkit-text-fill-color:#000;
+padding:1% 0%;
+color:#000;
+-webkit-text-stroke:.5px #fff;
+-webkit-text-shadow:0 0 3px rgb(1, 5, 1);
+text-shadow:0 0 3px rgb(1, 5, 1);
+-webkit-animation:abt .5s linear infinite;
+animation:abt .5s linear infinite;
+font-size:2.5rem;
+font-family: fantasy;
+font-weight:bolder;
+}
+
+
+@-webkit-keyframes abt{//animation to all titles on about page
+from{
+-webkit-text-shadow:0 0 5px rgb(1, 5, 1);
+text-shadow:0 0 5px rgb(1, 5, 1);
+
+}
+to{
+-webkit-text-shadow:0 0 10px rgb(1, 5, 1);
+text-shadow:0 0 10px rgb(1, 5, 1);
+
+}
+}
+
+@keyframes abt{//animation to all titles on about page
+from{
+-webkit-text-shadow:0 0 5px rgb(1, 5, 1);
+text-shadow:0 0 5px rgb(1, 5, 1);
+
+}
+to{
+-webkit-text-shadow:0 0 10px rgb(1, 5, 1);
+text-shadow:0 0 10px rgb(1, 5, 1);
+}
+}
+
+
+
+
+@-webkit-keyframes shwifty {//bouncing chef dude XD...getting shwifty
+0%{
+-webkit-transform:rotateX(0deg);
+transform:rotateX(0deg);
+}
+
+
+25%{
+-webkit-transform:rotate3D(-25deg);
+transform:rotateX(-25deg);
+}
+
+
+50%{
+-webkit-transform:rotateX(0deg);
+transform:rotateX(0deg);
+}
+
+
+100%{
+-webkit-transform:rotateX( 25deg);
+transform:rotateX( 25deg);
+}
+
+
+}
+
+
+
+@keyframes shwifty {//bouncing chef dude XD...getting shwifty
+0%{
+-webkit-transform:rotateX(0deg);
+transform:rotateX(0deg);
+}
+
+
+25%{
+-webkit-transform:rotate3D(-25deg);
+transform:rotateX(-25deg);
+}
+
+
+50%{
+-webkit-transform:rotateX(0deg);
+transform:rotateX(0deg);
+}
+
+
+100%{
+-webkit-transform:rotateX( 25deg);
+transform:rotateX( 25deg);
+}
+
+
+}
+
+//about section on about page custom stylings below
+.cardioTxt{
+z-index:3;
+}  
+
+.container {
+position: relative;
+height: 400px;
+width: 400px;
+overflow: hidden;
+transition: box-shadow 0.3s ease-out;
+}
+
+
+.img-container {
+background-color: #fff;
+position: absolute;
+left: 0;
+top: 0;
+height: 100%;
+width: 100%;
+transition: transform 0.3s ease-out;
+z-index: 2;
+}
+
+.img-container:hover {
+cursor: pointer;
+
+}
+
+.container:hover .img-container {
+transform: translateY(-100px);
+}
+
+.img-container > img {
+height: 100%;
+width: 100%;
+transition: opacity 0.3s ease-out;
+}
+
+.container:hover > .img-container > img {
+opacity: 0.5;
+}
+
+.social-media {
+display: flex;
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+z-index: 3;
+margin: 0;
+padding: 0;
+}
+
+.social-media > li {
+list-style: none;
+}
+
+.social-media > li > a {
+display: block;
+height: 50px;
+width: 50px;
+/* background-color: #FFF; */
+text-align: center;
+-webkit-text-fill-color:#000;
+color: #000;
+margin: 0 5px;
+border-radius: 50%;
+opacity: 0;
+transform: translateY(200px);
+transition: all 0.3s ease-out;
+font-size:3rem;
+}
+
+.container:hover > .social-media > li > a {
+transform: translateY(0);
+opacity: 1;
+}
+
+.social-media > li > a > .fa {
+font-size: 24px;
+line-height: 50px;
+transition: transform 0.3s ease-out;
+}
+
+.social-media > li > a:hover > .fa {
+transform: rotateY(360deg);
+}
+
+.container:hover .social-media li:nth-child(1) a {
+transition-delay: 0s;
+}
+
+.container:hover .social-media li:nth-child(2) a {
+transition-delay: 0.1s;
+}
+
+.container:hover .social-media li:nth-child(3) a {
+transition-delay: 0.2s;
+}
+
+.container:hover .social-media li:nth-child(4) a {
+transition-delay: 0.3s;
+}
+
+.container:hover .social-media li:nth-child(5) a {
+transition-delay: 0.4s;
+}
+
+.user-info {
+position: absolute;
+bottom: 0;
+left: 0;
+background-color: #FFF;
+height: 100px;
+width: 100%;
+box-sizing: border-box;
+padding: 10px;
+text-align: center;
+-webkit-text-fill-color:#000;
+color: #000;
+}
+
+.user-info > h2 {
+padding: 0;
+margin: 10px 0;
+}
+
+.user-info > span {
+-webkit-text-fill-color:#000;
+color: #000;
+font-size: 16px;
+}
+@media (max-width:@phoneUp) {
+
+
+
+.cardioTxt{
+z-index:1;
+}  
+
+.container{
+
+width:100%;
+}
+
+.container:hover{
+.cardioTxt{
+z-index:3;
+-webkit-transition:1s ease-in-out;
+transition:1s ease-in-out;
+}  
+.img-container {
+transform: translateY(-100px);
+}}
+
+.container:hover {
+.cardioTxt{
+z-index:3;
+}  
+.img-container {
+transform: translateY(-100px);}
+}
+}
+
+@media (max-width:@phoneTilt1) and (min-width:@phoneTilt2)
+and (max-height:@phoneTilt3) {
+
+
+.cardioTxt{
+z-index:1;
+}  
+
+.container{
+
+width:100%;
+}
+
+.container:hover{
+.cardioTxt{
+z-index:3;
+-webkit-transition:1s ease-in-out;
+transition:1s ease-in-out;
+}  
+.img-container {
+transform: translateY(-100px);
+}}
+
+.container:hover {
+.cardioTxt{
+z-index:3;
+}  
+.img-container {
+transform: translateY(-100px);}
+}
+}
+
+@media (max-width:@tablet1) and (max-height:@tablet2)
+and (min-width:@tablet3) and (min-height:@tablet4){
+
+
+.cardioTxt{
+z-index:1;
+}  
+
+.container{
+
+width:100%;
+}
+
+.container:hover{
+.cardioTxt{
+z-index:3;
+-webkit-transition:1s ease-in-out;
+transition:1s ease-in-out;
+}  
+.img-container {
+transform: translateY(-100px);
+}}
+
+.container:hover {
+.cardioTxt{
+z-index:3;
+}  
+.img-container {
+transform: translateY(-100px);}
+}
+}
+//about section on about page custom stylings above

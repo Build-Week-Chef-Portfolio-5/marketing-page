@@ -1,0 +1,78 @@
+body{
+    background-color:#ededed;
+}
+
+.Login{
+    display:flex;
+    margin: 0 auto;
+    width:850px;
+    height:600px;
+    margin-top:160px;
+    font-family: Poppins, sans-serif;
+    border-radius:5px;
+    background-color:white;
+    -webkit-box-shadow: 10px 10px 10px 0 #D9D9D9;
+    box-shadow: 10px 10px 10px 0 #D9D9D9;
+}
+
+.box{
+    margin: 0 auto;
+}
+
+.Login img{
+    width:400px;
+    border-radius:5px 0 0 5px;
+}
+
+.Login h1{
+    margin-top:70px;
+    margin-bottom:30px;
+    font-weight:normal;
+    font-size:1.5em;
+    color:#455252;
+}
+  
+.Login form{
+    margin-left:-25px;
+    max-width:280px;
+}
+
+.Login form input{
+    width:280px;
+    margin-bottom:15px;
+    padding:15px;
+    border-radius:4px;
+    border:1px solid lightgrey;
+}
+
+.Login form input:hover{
+    border-color:#FFB284;
+}
+
+.Login button{
+    width: 312px;
+    padding:10px;
+    color:white;
+    font:12px Poppins, sans-serif;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    border:0px;
+    border-radius:4px;
+    background-color:#FFB284;
+}
+
+.link{
+    margin-top:25px;
+    font:13px "Calibri", sans-serif;
+    color:#455252;
+}
+
+.link a{
+    margin-left:4px;
+    text-decoration:none;
+    color:#748080;
+}
+
+.link a:hover{
+    color:#FFB284;
+}
